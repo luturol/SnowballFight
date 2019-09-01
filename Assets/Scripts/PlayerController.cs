@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
 
+    public GameObject snowBall;
+    public Transform throwPoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +60,13 @@ public class PlayerController : MonoBehaviour
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpForce);
         }
 
+        if (Input.GetKeyDown(throwBall))
+        {
+            GameObject ballClone = (GameObject) Instantiate(snowBall, throwPoint.position, throwPoint.rotation);
+            ballClone.transform.localScale = transform.localScale; //Adjust scale from snowball
+
+            animator.SetTrigger("Throw");
+        }
 
         if(rigidbody2D.velocity.x < 0) //Moving to the left
         {

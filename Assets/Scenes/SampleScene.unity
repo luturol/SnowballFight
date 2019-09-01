@@ -241,7 +241,7 @@ PrefabInstance:
     - target: {fileID: 3103763901366305548, guid: c7a8827d4a4855540a8b02d8d806818e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3103763901366305548, guid: c7a8827d4a4855540a8b02d8d806818e,
         type: 3}
@@ -258,6 +258,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 241838521247256651, guid: c7a8827d4a4855540a8b02d8d806818e,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f79426e9bc880474ca9274c122bdcce0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a8827d4a4855540a8b02d8d806818e, type: 3}
 --- !u!1 &475499917
@@ -529,6 +534,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1338650456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1338650457}
+  m_Layer: 8
+  m_Name: ThrowPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1338650457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338650456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.61, y: -0.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2072424030}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743142608
 GameObject:
@@ -848,6 +883,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 826357289}
+  - {fileID: 1338650457}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -922,6 +958,9 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1
+  snowBall: {fileID: 2052055694220369979, guid: e143e4249005dda4f8be26bb19c9d588,
+    type: 3}
+  throwPoint: {fileID: 1338650457}
 --- !u!95 &2072424034
 Animator:
   serializedVersion: 3
@@ -1070,7 +1109,7 @@ PrefabInstance:
     - target: {fileID: 1867052090620766997, guid: 6cb20bb632a96f64e8ed6b8f9bc87487,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1867052090620766997, guid: 6cb20bb632a96f64e8ed6b8f9bc87487,
         type: 3}
@@ -1353,7 +1392,7 @@ PrefabInstance:
     - target: {fileID: 3103763901366305548, guid: c7a8827d4a4855540a8b02d8d806818e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3103763901366305548, guid: c7a8827d4a4855540a8b02d8d806818e,
         type: 3}

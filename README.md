@@ -1,6 +1,6 @@
 # Snowball Fight game
 
-It's a 2D game created with Unity 2018.3.7f1 using the tutorials from [GamePlusJames Youtube channel](https://www.youtube.com/user/gamesplusjames/featured)
+It's a 2D game created with Unity 2018.3.7f1 using the tutorials from [GamePlusJames Youtube channel](https://www.youtube.com/user/gamesplusjames/featured).
 
 ## [Video 1](https://www.youtube.com/watch?v=p23J5-1OTAM)
 
@@ -27,3 +27,26 @@ ANIMATIONS ARE REAL
 You'll learn how to add animations to your game and how to turn your player to another size, if you look to way it is then will see the character does not face the other side when press to run left.
 
 Animation involves others sprites "movements" then adding how much time it will last until it's over and adding parameters to set when it will be running or jumping.
+
+## [Video 4](https://www.youtube.com/watch?v=lwzUiOCOqVA)
+
+Now we're throwing snow balls!!
+
+This video is important!!
+
+You'll learn:
+
+1. How to create a Particle System and modulate it.
+
+    - Change number of particles
+    - Rotation
+    - Add gravity
+    - Lifetime
+    - Add effect to make it disappear
+    - Attach as a trigger into the snow ball
+    - How to create a trigger to instantiate Particle System (Snow Ball object)
+    - How to create a script to destroy the GameObject of the Particle System after the effect triggered.
+
+1. Add a circle collider into the snow ball and make an event to instantiate the Particle System Effect and destroy the snow ball.
+
+1. How to throw the snow ball from the player and the script that has on it.
