@@ -50,3 +50,10 @@ You'll learn:
 1. Add a circle collider into the snow ball and make an event to instantiate the Particle System Effect and destroy the snow ball.
 
 1. How to throw the snow ball from the player and the script that has on it.
+
+## [Video 5](https://www.youtube.com/watch?v=CFFcS-yoQac)
+
+This video you will add another player to the game!!!
+
+After all you've done, it's kind of easy. Just copy all animations and player material, then change the animations in the Animators tab to the animations of player 2. Finally, you add the sprites to the animations.
+Set new controls. Done. Go have fun.
