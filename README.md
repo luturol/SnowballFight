@@ -57,3 +57,27 @@ This video you will add another player to the game!!!
 
 After all you've done, it's kind of easy. Just copy all animations and player material, then change the animations in the Animators tab to the animations of player 2. Finally, you add the sprites to the animations.
 Set new controls. Done. Go have fun.
+
+## [Video 6](https://www.youtube.com/watch?v=xfvsUhNQLtA)
+
+Adding some UI!
+
+Things you will learn:
+
+1. How to set a canvas
+
+1. Adding Text and Image to it
+
+1. Adding Scripts to make interactions if the colliders you have in the players objects.
+
+    Remember to add the tags on the player!! You will manage a script of the game, so it can control HP loss from players and the UI of the HP.
+
+    GameManager will controll UI Effects and the SnowBall will call GamaManager to set which will be hurt.
+
+    GameManager => Controls UI
+
+    SnowBall => SnowBall Effects and Who gets shot to lost HP. Finds who got the shot from tag name attached to it and call GameManager to register HP loss.
+
+    PlayerController => Player Actions
+
+1. Adding a game over scene and how to make UI effects disappear when the player get hit by a snow ball.
