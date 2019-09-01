@@ -81,3 +81,13 @@ Things you will learn:
     PlayerController => Player Actions
 
 1. Adding a game over scene and how to make UI effects disappear when the player get hit by a snow ball.
+
+## [Video 7](https://www.youtube.com/watch?v=QSTKy9cHmcI)
+
+Adding Sound!
+
+Be careful with Play on Awake and Loop checks so it does not make you crazy and make odd sounds.
+
+You can add sound in the script or in the animation.
+
+Just send a Play event on the script or add in the animation effect.
