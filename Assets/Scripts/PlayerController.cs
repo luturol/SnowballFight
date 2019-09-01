@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,10 +20,15 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask whatIsGround; //Default layer = Tudo que está nela, ou seja, by default são os componentes criados no unity
 
+
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,5 +56,19 @@ public class PlayerController : MonoBehaviour
         {
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpForce);
         }
+
+
+        if(rigidbody2D.velocity.x < 0) //Moving to the left
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else if(rigidbody2D.velocity.x > 0) //Moving to the right
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+
+        animator.SetFloat("Speed", Mathf.Abs(rigidbody2D.velocity.x));
+        animator.SetBool("Grounded", isGrounded);
+        
     }
 }
