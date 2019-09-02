@@ -91,3 +91,15 @@ Be careful with Play on Awake and Loop checks so it does not make you crazy and 
 You can add sound in the script or in the animation.
 
 Just send a Play event on the script or add in the animation effect.
+
+## [Video 8](https://www.youtube.com/watch?v=uAa_MfnM6_I)
+
+Adding Menu!
+
+Things you'll learn:
+
+1. How to create another Scene and how to call one from another one.
+
+1. How to create buttons and add OnClick event
+
+1. Scripting button and Scene change
